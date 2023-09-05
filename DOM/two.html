@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="lang">
+        <li>Javascript</li>
+    </ul>
+</body>
+    <script>
+        function addLAng(langName){
+            const l1=document.createElement('li')
+            l1.innerHTML=`${langName}`
+            document.querySelector(".lang").
+            appendChild(l1)
+        }
+        addLAng("Python")//ye har baar tree ko traverse kr rha hai 
+        addLAng("Ruby")
+
+        function addOptiLang(langName){
+            const li=document.createElement('li');
+            li.appendChild(document.createTextNode(langName))
+            document.querySelector(".lang").
+            appendChild(li)
+        }
+        addOptiLang("GOLANG")
+
+        //EDIT
+        
+    </script>
+</html>
